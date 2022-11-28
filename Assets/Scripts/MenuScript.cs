@@ -21,6 +21,16 @@ public class MenuScript : MonoBehaviour
         SceneManager.LoadScene("Game");
 	}
 
+    public void JoinJoinMenu() 
+	{
+        SceneManager.LoadScene("JoinMenu");
+	}
+
+    public void JoinMenu() 
+	{
+        SceneManager.LoadScene("Menu");
+	}
+
     void Start()
     {
     			    

@@ -255,7 +255,7 @@ public class TurnScript : MonoBehaviour
     {
         WinGamePanel.SetActive(true);
         TurnOffXO();
-        WinGameText.text = "Player 'X' Won!";
+        WinGameText.text = "'X' Won!";
         GameScript.instance.setCanClick(true);
     }
 
@@ -263,7 +263,7 @@ public class TurnScript : MonoBehaviour
     {
         WinGamePanel.SetActive(true);
         TurnOffXO();
-        WinGameText.text = "Player 'O' Won!";
+        WinGameText.text = "'O' Won!";
         GameScript.instance.setCanClick(true);
     }
 
@@ -271,7 +271,7 @@ public class TurnScript : MonoBehaviour
     {
         WinGamePanel.SetActive(true);
         TurnOffXO();
-        WinGameText.text = "Remiza";
+        WinGameText.text = "Draw!";
         GameScript.instance.setCanClick(true);
     }
 

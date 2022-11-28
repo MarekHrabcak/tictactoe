@@ -24,7 +24,7 @@ public class GameScript : MonoBehaviour
 
     private void Update()
     {
-        rada.text = canClick ? "Si na rade" : "Nie si na rade";
+        rada.text = canClick ? "" : "Wait for opponent";
 
         if (Input.GetKeyUp(KeyCode.Escape))
         {
@@ -69,7 +69,7 @@ public class GameScript : MonoBehaviour
 
     public void setLobbyId(int lobbyId) {
         this.lobbyId = lobbyId;
-        GameObject.Find("Lobby ID Label").GetComponent<TMP_Text>().text = $"Lobby ID: {lobbyId}";
+        GameObject.Find("Lobby ID Label").GetComponent<TMP_Text>().text = $"JoinCode: {lobbyId}";
     }
 
     public int getLobbyId() {
